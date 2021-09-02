@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-=ym$4+76^06+3len(+m0csyy@xcr^&m&8$ba9^j896)!e!r!i5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     # Packages
     'rest_framework',
+    'rest_framework.authtoken',
     'corsheaders',
 
     # Apps
@@ -59,6 +60,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'backend.urls'
+
+AUTH_USER_MODEL = 'AUTH.AuthUser'
 
 TEMPLATES = [
     {
@@ -114,7 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -137,4 +140,11 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# CORS Settings
 CORS_ALLOW_ALL_ORIGINS = True
+
+# REST Settings
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': ['rest_framework.authentication.TokenAuthentication']
+}
+
