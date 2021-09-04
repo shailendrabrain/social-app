@@ -6,7 +6,7 @@ from rest_framework import status
 from rest_framework.parsers import JSONParser
 from rest_framework.response import Response
 from .serializers import SignupSerializer
-from rest_framework.generics import CreateAPIView
+from rest_framework.generics import CreateAPIView, ListAPIView
 
 User = get_user_model()
 
@@ -27,7 +27,7 @@ class LoginView(APIView):
     def post(self, request):
         email = request.data['email']
         password = request.data['password']
-        user = authenticate(email='email', password=password)
+        user = authenticate(email=email, password=password)
 
         if user is not None:
             context = {'token': str(Token.objects.get(user=user))}
@@ -36,3 +36,5 @@ class LoginView(APIView):
         else:
             context = {'message': str('invalid credential')}
             return Response(data=context, status=status.HTTP_401_UNAUTHORIZED)
+
+

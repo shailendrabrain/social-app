@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
-
+    'HOME',
     # Apps
     'AUTH.apps.AuthConfig'
 ]

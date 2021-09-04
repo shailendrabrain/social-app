@@ -6,8 +6,9 @@ from django.utils.translation import ugettext_lazy as _
 
 class AuthUser(AbstractUser):
     email = models.EmailField(_('email address'), unique=True)
-
+    profile_photo=models.ImageField(upload_to='profile_photo')
     USERNAME_FIELD = 'email'
+
     REQUIRED_FIELDS = []
 
     objects = CustomUserManager()
