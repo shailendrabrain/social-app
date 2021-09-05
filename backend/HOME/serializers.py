@@ -1,8 +1,10 @@
 from rest_framework.serializers import ModelSerializer
-from AUTH.models import AuthUser
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 
 class SearchSerializer(ModelSerializer):
     class Meta:
-        model = AuthUser
-        fields = ['username','profile_photo','first_name','last_name']
+        model = User
+        fields = ['username', 'email']

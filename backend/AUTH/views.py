@@ -15,26 +15,19 @@ class SignupView(CreateAPIView):
     serializer_class = SignupSerializer
     queryset = User.objects.all()
 
-    def create(self, request, *args, **kwargs):
-        response = super().create(request, *args, **kwargs)
-        token, created = Token.objects.get_or_create(user_id=response.data["id"])
-        response.data["token"] = str(token)
-        return response
 
 
 class LoginView(APIView):
 
-    def post(self, request):
-        email = request.data['email']
-        password = request.data['password']
+    def post(self, request, *args, **kwargs):
+        email = request.data.get('email', None)
+        password = request.data.get('password', None)
         user = authenticate(email=email, password=password)
-
+        
         if user is not None:
             context = {'token': str(Token.objects.get(user=user))}
             return Response(data=context, status=status.HTTP_200_OK)
 
         else:
-            context = {'message': str('invalid credential')}
+            context = {'message': str('invalid credentials')}
             return Response(data=context, status=status.HTTP_401_UNAUTHORIZED)
-
-

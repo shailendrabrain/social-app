@@ -4,4 +4,4 @@ from .models import AuthUser
 
 @admin.register(AuthUser)
 class User(admin.ModelAdmin):
-    list_display = ['username', 'email', 'first_name', 'last_name']
+    list_display = ['username', 'email', 'is_active']

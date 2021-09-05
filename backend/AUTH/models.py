@@ -8,7 +8,6 @@ class AuthUser(AbstractUser):
     first_name = None
     last_name = None
     email = models.EmailField(_('email address'), unique=True)
-    profile_photo=models.ImageField(upload_to='profile_photo')
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
