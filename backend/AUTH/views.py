@@ -7,7 +7,7 @@ from rest_framework.parsers import JSONParser
 from rest_framework.response import Response
 from .serializers import SignupSerializer
 from rest_framework.generics import CreateAPIView, ListAPIView
-
+#it is view
 User = get_user_model()
 
 

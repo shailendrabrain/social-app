@@ -1,0 +1,66 @@
+[33mcommit be987de4e9fd34d28d41486ba856ad936f845dfe[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: shailendrabrain <shailendrayadav25072001@gmail.com>
+Date:   Sun Sep 5 21:07:27 2021 +0530
+
+    fixes
+
+[33mcommit 88c0120aa86478dd48d20290897a7a2534787b77[m
+Merge: 3c05f06 0f4f67f
+Author: shailendrabrain <shailendrayadav25072001@gmail.com>
+Date:   Sun Sep 5 20:09:06 2021 +0530
+
+    Merge remote-tracking branch 'origin'
+
+[33mcommit 3c05f063b070d959302a03c6b8ac4d6f996271ae[m
+Author: shailendrabrain <shailendrayadav25072001@gmail.com>
+Date:   Sun Sep 5 20:07:50 2021 +0530
+
+    minor changes
+
+[33mcommit a098e78c5e0372a71443bc087ab7a33ae1c2fdd3[m
+Author: shailendrabrain <shailendrayadav25072001@gmail.com>
+Date:   Sun Sep 5 00:42:42 2021 +0530
+
+    okay
+
+[33mcommit 0f4f67f99365b4b1b4728cc002d07314cd8638bf[m
+Author: Nikesh Varma <nikeshvarma50@gmail.com>
+Date:   Sat Sep 4 17:09:53 2021 +0530
+
+    React Router Dom
+
+[33mcommit aec6e0adab673cb3b858be0404534dcca4d01398[m
+Author: shailendrabrain <shailendrayadav25072001@gmail.com>
+Date:   Fri Sep 3 01:10:42 2021 +0530
+
+    authentication
+
+[33mcommit 513890475266a0a668a1a888c0849facc3e39313[m
+Author: shailendrabrain <shailendrayadav25072001@gmail.com>
+Date:   Thu Sep 2 19:01:43 2021 +0530
+
+    backend updated
+
+[33mcommit 54e85515bc64ca4682c576ea3eb9d1b3e8fcd293[m
+Author: shailendrabrain <shailendrayadav25072001@gmail.com>
+Date:   Thu Sep 2 19:00:05 2021 +0530
+
+    backend updated
+
+[33mcommit cb60045d579874dc50779117492bed6da16e744b[m
+Author: Nikesh Varma <nikeshvarma50@gmail.com>
+Date:   Tue Aug 10 15:09:13 2021 +0530
+
+    Setup Initialized
+
+[33mcommit fe11e906ad4f583138d7faebe7d116005cf1e558[m
+Author: shailendrabrain <shailendrayadav25072001@gmail.com>
+Date:   Tue Aug 10 11:10:30 2021 +0530
+
+    requirements added
+
+[33mcommit 8919f0d45ec0818727c81294096824a6d82878d3[m
+Author: shailendrabrain <shailendrayadav25072001@gmail.com>
+Date:   Tue Aug 10 11:07:14 2021 +0530
+
+    first commit
